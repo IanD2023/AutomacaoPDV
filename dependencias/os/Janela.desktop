@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Janela
+Icon=Jenela
+Exec=python3 /root/autohelp/executar.py &
+Terminal=false
+Type=Application
+X-GNOME-Autostart-enabled=true
+Name[pt_BR]=Jenela.desktop

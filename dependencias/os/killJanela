@@ -1,0 +1,19 @@
+ #!/bin/bash
+
+#PIDJANELA=`pgrep -f -d' ' JanelaGLPI`
+PIDAUTOHELP=`pgrep -f -d' ' autohelp`
+
+if pgrep -f JanelaGLPI
+
+then
+
+echo "IN EXECUTION"
+
+#kill $PIDJANELA
+kill $PIDAUTOHELP
+
+else
+
+echo "NO EXECUTION"
+
+fi

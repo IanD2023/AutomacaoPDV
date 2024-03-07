@@ -1,0 +1,11 @@
+[Unit]
+Description="autohelp"
+Requires=display-manager.service
+After=display-manager.service
+
+[Service]
+ExecStart=python3 /root/initJanela/executar.py &
+#ExecStop=/usr/bin/killall x11vnc
+
+[Install]
+WantedBy=multi-user.target

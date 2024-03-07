@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+	<menu id="root-menu" label="Econect">
+		<separator  label="Econect Lubuntu"/>
+		<item icon="/etc/Configs/Imagens/konsole.png " label="Terminal">
+			<action name="Execute">
+				<execute>lxterminal -e login</execute>
+			</action>
+		</item>
+		<item icon="/etc/Configs/Imagens/janela.png" label="AutoHelpNE">
+                        <action name="Execute">
+                                <execute>startJanela</execute>
+                        </action>
+                </item>
+		<item icon="/etc/Configs/Imagens/gedit-icon.png" label="Editor">
+			<action name="Execute">
+				<execute>gedit</execute>
+			</action>
+		</item>
+		<separator/>
+		<item icon="/etc/Configs/Imagens/icone_gerenciador_so.png" label="Gerenciador S.O">
+			<action name="Execute">
+				<execute>gerenciador</execute>
+			</action>
+		</item>
+		<item icon="/etc/Configs/Imagens/computer.png" label="Pdv">
+			<action name="Execute">
+				<execute>verificaPDV</execute>
+			</action>
+		</item>
+		<item icon="/etc/Configs/Imagens/logo_relatorio.png" label="Concentrador">
+			<action name="Execute">
+				<execute>concentrador</execute>
+			</action>
+		</item>
+		<separator/>
+		<item icon="/etc/Configs/Imagens/google-chrome.png" label="Google Chrome">
+			<action name="Execute">
+				<execute>google-chrome</execute>
+			</action>
+		</item>
+		<item icon="/etc/Configs/Imagens/gnome-remote-desktop.png" label="VNC/RDP">
+			<action name="Execute">
+				<execute>vinagre</execute>
+			</action>
+		</item>
+		<menu icon="/etc/Configs/Imagens/preferences-system-network.png" id="root-menu-794116" label="TouchScreen">
+			<item icon="/etc/Configs/Imagens/computer.png" label="Resolução">
+				<action name="Execute">
+					<execute>arandr</execute>
+				</action>
+			</item>
+			<item icon="/etc/Configs/Imagens/touchscreen.png" label="Calibrar">
+				<action name="Execute">
+					<execute>menutouch</execute>
+				</action>
+			</item>
+		</menu>
+		<item icon="/etc/Configs/Imagens/multimedia-volume-control.png" label="Controle de Audio">
+                        <action name="Execute">
+                                <execute>pavucontrol</execute>
+                        </action>
+            </item>
+		<separator/>
+		<item icon="/etc/Configs/Imagens/quick-restart.png" label="Reiniciar">
+			<action name="Execute">
+				<execute>reboot.sh</execute>
+			</action>
+		</item>
+		<item icon="/etc/Configs/Imagens/Shutdown_48.png" label="Desligar">
+			<action name="Execute">
+				<execute>poweroff.sh</execute>
+			</action>
+		</item>
+
+	</menu>
+</openbox_menu>

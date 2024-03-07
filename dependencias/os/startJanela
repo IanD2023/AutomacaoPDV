@@ -1,0 +1,16 @@
+#!/bin/bash
+
+
+if pgrep -f JanelaGLPI 
+
+then
+	echo 'Ja existe uma execucao'
+
+	xterm -e python3 /root/autohelp/init.py &
+
+	# exit
+else
+	echo 'Iniciando'
+
+	xterm -e python3 /root/JanelaGLPI/main.py &
+fi
